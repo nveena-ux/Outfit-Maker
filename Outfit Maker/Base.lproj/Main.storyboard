@@ -1,24 +1,575 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Outfit_Maker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ymQ-Ps-DK4">
+                                <rect key="frame" x="67" y="137" width="305" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Y2K" image="y2kbutton"/>
+                                <connections>
+                                    <segue destination="Tlc-u9-deQ" kind="show" id="8Zz-La-xci"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z4U-uW-vBz">
+                                <rect key="frame" x="79" y="451" width="280" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cottagecore" image="cottagebutton"/>
+                                <connections>
+                                    <segue destination="cdg-dd-ah3" kind="show" id="N7K-Qb-zML"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcl-JR-NQU">
+                                <rect key="frame" x="52" y="53" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.13192175719999999" blue="0.75488078049999996" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="1" green="0.13192175719999999" blue="0.75488078049999996" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Choose Your     Aesthetic ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="47" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.77554702909999995" green="1" blue="0.85627621070000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gkh-xM-eJB">
+                                <rect key="frame" x="79" y="269" width="280" height="243"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dark Academia " image="darkbutton"/>
+                                <connections>
+                                    <segue destination="86R-RL-qfx" kind="show" id="XRk-MI-Zei"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLg-Gg-vrv">
+                                <rect key="frame" x="60" y="601" width="305" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Choose Your Own" image="Play-7-removebg-preview"/>
+                                <connections>
+                                    <segue destination="fvz-bc-FnZ" kind="show" id="uCi-f0-puR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dwF-yj-CGO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="93.75"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="1ep-Bd-sXc">
+            <objects>
+                <viewController id="Tlc-u9-deQ" customClass="SecondViewController" customModule="Outfit_Maker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7YC-Kj-gJf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="w64-Cm-cyz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="848"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URt-l9-7JC">
+                                <rect key="frame" x="20" y="64" width="374" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86087566609999999" green="0.54396154519999995" blue="0.7488696453" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="       ">
+                                        <attributes>
+                                            <font key="NSFont" size="52" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="✨">
+                                        <attributes>
+                                            <color key="NSColor" red="0.90980000000000005" green="0.90588000000000002" blue="0.89019999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="AppleColorEmoji"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSStrokeColor" red="0.90980000000000005" green="0.90588000000000002" blue="0.89019999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Y2K">
+                                        <attributes>
+                                            <font key="NSFont" size="52" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="✨">
+                                        <attributes>
+                                            <color key="NSColor" red="0.90980000000000005" green="0.90588000000000002" blue="0.89019999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="AppleColorEmoji"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSStrokeColor" red="0.90980000000000005" green="0.90588000000000002" blue="0.89019999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jku-HB-9Jg">
+                                <rect key="frame" x="120" y="648" width="175" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Web_Photo_Editor-22-removebg-preview-2"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="zrh-Th-RNV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g6o-yw-CI1">
+                                <rect key="frame" x="264" y="667" width="172" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="Web_Photo_Editor-8-removebg-preview">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="y2kMusic:" destination="Tlc-u9-deQ" eventType="touchUpInside" id="Qox-y8-Qbo"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Web_Photo_Editor-4-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="0Ru-20-NUb">
+                                <rect key="frame" x="-39" y="0.0" width="226" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PDQ-eI-kw6">
+                                <rect key="frame" x="40" y="140" width="334" height="526"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bIn-LO-dpI">
+                                        <rect key="frame" x="41" y="186" width="252" height="155"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chiffon_Mini_Skirt_-_Rose_Red___USA_M-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="QcC-sK-52y">
+                                                <rect key="frame" x="-7" y="8" width="251" height="152"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.81105928989999998" blue="0.9062630089" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lYP-h3-DMy">
+                                        <rect key="frame" x="41" y="24" width="252" height="143"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bestdealfriday_Valentine_s_Day_Pink_Love_Print_Women_s_Short_T-Shirt__Pink-3XL-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="JEW-wk-0rv">
+                                                <rect key="frame" x="-7" y="0.0" width="267" height="165"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.81105928991235499" blue="0.906263008852222" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jgy-qc-re6">
+                                        <rect key="frame" x="41" y="372" width="252" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Aesthetic_Milk_Sneakers-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="Sxl-5W-gcF">
+                                                <rect key="frame" x="1" y="0.0" width="243" height="136"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.81105928989999998" blue="0.9062630089" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86087566609999999" green="0.5927082132" blue="0.75051386679999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Web_Photo_Editor-9-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="Emc-8N-O7b">
+                                <rect key="frame" x="264" y="64" width="190" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHR-Pn-FP1">
+                                <rect key="frame" x="-39" y="648" width="193" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Web_Photo_Editor-7-removebg-preview"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tHn-hE-sTj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="w64-Cm-cyz" firstAttribute="top" secondItem="tHn-hE-sTj" secondAttribute="top" id="7BR-RD-5m9"/>
+                            <constraint firstItem="w64-Cm-cyz" firstAttribute="bottom" secondItem="tHn-hE-sTj" secondAttribute="bottom" constant="40" id="JiV-m9-Ict"/>
+                            <constraint firstItem="tHn-hE-sTj" firstAttribute="trailing" secondItem="w64-Cm-cyz" secondAttribute="trailing" id="MQE-Aq-gWh"/>
+                            <constraint firstItem="w64-Cm-cyz" firstAttribute="leading" secondItem="tHn-hE-sTj" secondAttribute="leading" id="x3F-87-D9d"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SW6-FU-cff"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BF9-Co-sfZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773.91304347826087" y="93.75"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="gMd-33-uW8">
+            <objects>
+                <viewController id="cdg-dd-ah3" customClass="ThirdViewController" customModule="Outfit_Maker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KBM-wB-cBN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="5Zc-8I-Hrp">
+                                <rect key="frame" x="0.0" y="-6" width="414" height="848"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="svn-Un-zZn">
+                                <rect key="frame" x="49" y="140" width="333" height="536"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z79-U4-1fw">
+                                        <rect key="frame" x="41" y="191" width="252" height="155"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image=" " translatesAutoresizingMaskIntoConstraints="NO" id="FZV-HF-e8V">
+                                                <rect key="frame" x="28" y="8" width="196" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uiy-wo-HJ9">
+                                        <rect key="frame" x="41" y="24" width="252" height="143"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whitetunicd" translatesAutoresizingMaskIntoConstraints="NO" id="OoS-Z8-4VE">
+                                                <rect key="frame" x="28" y="7" width="196" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Web_Photo_Editor-28-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="MWR-iR-P8A">
+                                        <rect key="frame" x="238" y="-39" width="136" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vUN-kl-crj">
+                                        <rect key="frame" x="41" y="372" width="252" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image=" -2" translatesAutoresizingMaskIntoConstraints="NO" id="KDy-YK-KH8">
+                                                <rect key="frame" x="28" y="-8" width="196" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2163058546803156" green="0.26145240208780773" blue="0.17600274466681132" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyH-XI-pdH">
+                                <rect key="frame" x="20" y="81" width="374" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.21630585469999999" green="0.26145240209999998" blue="0.17600274469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="     ">
+                                        <attributes>
+                                            <font key="NSFont" size="52" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="🧚">
+                                        <attributes>
+                                            <color key="NSColor" red="0.90980000000000005" green="0.90588000000000002" blue="0.89019999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="AppleColorEmoji"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSStrokeColor" red="0.90980000000000005" green="0.90588000000000002" blue="0.89019999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="cottagecore">
+                                        <attributes>
+                                            <color key="NSColor" red="0.90980000000000005" green="0.90588000000000002" blue="0.89019999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Menlo-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="28" name="AppleColorEmoji"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSStrokeColor" red="0.90980000000000005" green="0.90588000000000002" blue="0.89019999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="🧚">
+                                        <attributes>
+                                            <color key="NSColor" red="0.90980000000000005" green="0.90588000000000002" blue="0.89019999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="AppleColorEmoji"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSStrokeColor" red="0.90980000000000005" green="0.90588000000000002" blue="0.89019999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amV-V8-Sad">
+                                <rect key="frame" x="124" y="674" width="166" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Web_Photo_Editor-25-removebg-preview"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="zCc-CP-VlL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7F-Hv-3wG">
+                                <rect key="frame" x="0.0" y="677" width="166" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Web_Photo_Editor-29-removebg-preview"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t5f-rf-myT">
+                                <rect key="frame" x="258" y="681" width="172" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="Web_Photo_Editor-26-removebg-preview">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="cottageMusic:" destination="cdg-dd-ah3" eventType="touchUpInside" id="Abv-kJ-d7D"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Web_Photo_Editor-27-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="rZc-CQ-7DF">
+                                <rect key="frame" x="-18" y="0.0" width="132" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jx9-5b-ILq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qBU-0a-Stu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HsG-YP-kdh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1492.753623188406" y="93.75"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="MNA-th-0y0">
+            <objects>
+                <viewController id="86R-RL-qfx" customClass="FourthViewController" customModule="Outfit_Maker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aho-Nd-VDL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3" highlightedImage="dark academia page" translatesAutoresizingMaskIntoConstraints="NO" id="5EG-wl-BsZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="848"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="heavy"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R2b-iY-Vxo">
+                                <rect key="frame" x="49" y="140" width="333" height="536"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b0b-hP-RwY">
+                                        <rect key="frame" x="40" y="191" width="252" height="213"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fleur_checked_wool_trousers___Burberry___MATCHESFASHION_US-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="7Bx-x6-fly">
+                                                <rect key="frame" x="-22" y="0.0" width="291" height="213"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zVh-M4-y59">
+                                        <rect key="frame" x="40" y="22" width="252" height="143"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beige_turtleneck___ShopLook-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="6SF-Si-Ig1">
+                                                <rect key="frame" x="22" y="8" width="208" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pVN-tY-azY">
+                                        <rect key="frame" x="40" y="412" width="252" height="98"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Elsie_Mary_Janes_-_Brown___Plush_Plush___36-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="N4o-b6-kyw">
+                                                <rect key="frame" x="22" y="-18" width="208" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17397676991155298" green="0.12208184613638791" blue="0.10142659783493056" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" enabled="NO" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8R-81-hNq">
+                                <rect key="frame" x="20" y="77" width="374" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.17397676989999999" green="0.1220818461" blue="0.1014265978" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="       dark academia">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="26" name="Zapfino"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWV-Hc-PET">
+                                <rect key="frame" x="119" y="672" width="160" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Web_Photo_Editor-32-removebg-preview"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Vy5-3H-9hr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sev-jw-s9g">
+                                <rect key="frame" x="0.0" y="688" width="146" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Web_Photo_Editor-30-removebg-preview"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Web_Photo_Editor-33-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="iSo-Ft-nme">
+                                <rect key="frame" x="-57" y="-17" width="234" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JC0-4E-ib6">
+                                <rect key="frame" x="254" y="671" width="160" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Web_Photo_Editor-31-removebg-preview"/>
+                                <connections>
+                                    <action selector="darkMusic:" destination="86R-RL-qfx" eventType="touchUpInside" id="fPf-67-6dd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aQO-Og-uGj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TEB-KM-uyj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zIP-ln-V7U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2228.985507246377" y="93.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9NM-yf-GkV">
+            <objects>
+                <viewController id="fvz-bc-FnZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hdU-MF-nVS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ceh-eX-LEw">
+                                <rect key="frame" x="41" y="153" width="333" height="536"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uTX-x7-P72">
+                                        <rect key="frame" x="40" y="191" width="252" height="213"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fleur_checked_wool_trousers___Burberry___MATCHESFASHION_US-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="fSK-jf-ERD">
+                                                <rect key="frame" x="-22" y="0.0" width="291" height="213"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R1T-YZ-igR">
+                                        <rect key="frame" x="40" y="22" width="252" height="143"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beige_turtleneck___ShopLook-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="mu0-qh-iKv">
+                                                <rect key="frame" x="22" y="8" width="208" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="syi-tr-7NP">
+                                        <rect key="frame" x="40" y="412" width="252" height="98"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Elsie_Mary_Janes_-_Brown___Plush_Plush___36-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="Mws-f1-SbA">
+                                                <rect key="frame" x="22" y="-18" width="208" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17397676989999999" green="0.1220818461" blue="0.1014265978" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" enabled="NO" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vgf-jw-Izz">
+                                <rect key="frame" x="20" y="77" width="374" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.17397676989999999" green="0.1220818461" blue="0.1014265978" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="    Choose your Owm">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="26" name="Zapfino"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3wh-l7-wzG"/>
+                        <color key="backgroundColor" red="0.75470791410000004" green="0.41925890760000001" blue="0.86087566609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="P0E-99-pIe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RBp-4A-hEI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2966.666666666667" y="93.75"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Vy5-3H-9hr"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name=" " width="1004" height="1177"/>
+        <image name=" -2" width="750" height="750"/>
+        <image name="1" width="1080" height="1920"/>
+        <image name="2" width="1080" height="1920"/>
+        <image name="3" width="1080" height="1920"/>
+        <image name="Aesthetic_Milk_Sneakers-removebg-preview" width="499" height="499"/>
+        <image name="Bestdealfriday_Valentine_s_Day_Pink_Love_Print_Women_s_Short_T-Shirt__Pink-3XL-removebg-preview" width="433" height="577"/>
+        <image name="Chiffon_Mini_Skirt_-_Rose_Red___USA_M-removebg-preview" width="500" height="500"/>
+        <image name="Elsie_Mary_Janes_-_Brown___Plush_Plush___36-removebg-preview" width="433" height="577"/>
+        <image name="Fleur_checked_wool_trousers___Burberry___MATCHESFASHION_US-removebg-preview" width="433" height="577"/>
+        <image name="Play-7-removebg-preview" width="500" height="500"/>
+        <image name="Web_Photo_Editor-22-removebg-preview-2" width="500" height="500"/>
+        <image name="Web_Photo_Editor-25-removebg-preview" width="500" height="500"/>
+        <image name="Web_Photo_Editor-26-removebg-preview" width="500" height="500"/>
+        <image name="Web_Photo_Editor-27-removebg-preview" width="500" height="500"/>
+        <image name="Web_Photo_Editor-28-removebg-preview" width="500" height="500"/>
+        <image name="Web_Photo_Editor-29-removebg-preview" width="500" height="500"/>
+        <image name="Web_Photo_Editor-30-removebg-preview" width="500" height="500"/>
+        <image name="Web_Photo_Editor-31-removebg-preview" width="500" height="500"/>
+        <image name="Web_Photo_Editor-32-removebg-preview" width="500" height="500"/>
+        <image name="Web_Photo_Editor-33-removebg-preview" width="500" height="500"/>
+        <image name="Web_Photo_Editor-4-removebg-preview" width="500" height="500"/>
+        <image name="Web_Photo_Editor-7-removebg-preview" width="500" height="500"/>
+        <image name="Web_Photo_Editor-8-removebg-preview" width="500" height="500"/>
+        <image name="Web_Photo_Editor-9-removebg-preview" width="500" height="500"/>
+        <image name="beige_turtleneck___ShopLook-removebg-preview" width="450" height="450"/>
+        <image name="cottagebutton" width="1080" height="1080"/>
+        <image name="dark academia page" width="512" height="689"/>
+        <image name="darkbutton" width="1080" height="1080"/>
+        <image name="whitetunicd" width="591" height="476"/>
+        <image name="y2kbutton" width="1080" height="1080"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
