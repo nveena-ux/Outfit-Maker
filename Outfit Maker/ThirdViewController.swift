@@ -15,7 +15,17 @@ class ThirdViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func cotOne(_ sender: UIButton) {
+        if UIImage(named:"cot1") != nil {
+            sender.setImage(UIImage(named:"unnamed-5.png"), for: .normal)
+            }
+        if UIImage(named:"unnamed-5") != nil {
+                sender.setImage( UIImage(named:"cot1.png"), for: .highlighted)
+            }
+        }
+    
+    
+    
     /*
     // MARK: - Navigation
 
@@ -26,7 +36,7 @@ class ThirdViewController: UIViewController {
     }
     */
     @IBAction func cottageMusic(_ sender: UIButton) {
-        if let url = URL(string: "https://www.youtube.com/playlist?list=PLPQsVZCulJyVGKrZLrsoPVQ8HAsoPPdab&jct=iW3QhCyKJXd5CzkUZmvDlHGjpU-GUw") {
+        if let url = URL(string: "https://www.youtube.com/watch?v=d_HlPboLRL8&list=PLBv9wE6fNOYNk2RIK8d7c0jtzorDoVDb9") {
           UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     

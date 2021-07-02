@@ -11,11 +11,24 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
     }
     
-
+    
+    @IBAction func OutfitTwo(_ sender: UIButton) {
+        if UIImage(named:"unnamed-3") != nil {
+            sender.setImage(UIImage(named:"unnamed-4.png"), for: .normal)
+            }
+        if UIImage(named:"unnamed-4") != nil {
+                sender.setImage( UIImage(named:"unnamed-3.png"), for: .highlighted)
+            }
+        }
+    
+    
+    
     /*
     // MARK: - Navigation
 

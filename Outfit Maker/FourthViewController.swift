@@ -15,7 +15,16 @@ class FourthViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func darkOne(_ sender: UIButton) {
+        if UIImage(named:"d1") != nil {
+            sender.setImage(UIImage(named:"d2.png"), for: .normal)
+            }
+        if UIImage(named:"d2") != nil {
+                sender.setImage( UIImage(named:"d1.png"), for: .highlighted)
+            }
+    
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -26,7 +35,7 @@ class FourthViewController: UIViewController {
     }
     */
     @IBAction func darkMusic(_ sender: UIButton) {
-        if let url = URL(string: "https://www.youtube.com/playlist?list=PLPQsVZCulJyVGKrZLrsoPVQ8HAsoPPdab&jct=iW3QhCyKJXd5CzkUZmvDlHGjpU-GUw") {
+        if let url = URL(string: "https://www.youtube.com/watch?v=e-3z40QzJT0&list=PLPQsVZCulJyW9tuSb5kgQXSvdT10ed5ud") {
           UIApplication.shared.open(url, options: [:], completionHandler: nil)
     
     }
